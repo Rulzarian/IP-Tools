@@ -168,9 +168,9 @@ Made By Rulzarian
 
     1) Search Your Current Wi-Fi IP
     2) Research Another IP Address
-    3) Check If IP is Blacklisted
-    4) Ping IP to Check Wi-Fi Speed
-    5) Retrieve Whois Information for IP
+    3) Check If IP Is Blacklisted
+    4) Ping IP To Check Wi-Fi Speed
+    5) Retrieve Whois Information For IP
     6) Exit
     """)
 
