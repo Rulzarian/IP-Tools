@@ -4,4 +4,7 @@ GitHub Tool That Lets You Research An IP Address And Discover Your Connected WiF
 
 # Requirements
 
-pip install requests colorama
+- pip install requests
+- pip install whois
+- pip install colorama
+- pip install python-whois
