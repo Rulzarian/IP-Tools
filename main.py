@@ -153,29 +153,33 @@ def display_ip_info(public_ip, private_ip):
     # Display Private IP in purple
     print(Fore.MAGENTA + f"\nPrivate IP: {private_ip}")
 
+# Function to display ASCII art with an orange-ish color
+def show_ascii_art():
+    print(Fore.YELLOW + """
+██╗██████╗     ████████╗ ██████╗  ██████╗ ██╗     ███████╗
+██║██╔══██╗    ╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝
+██║██████╔╝       ██║   ██║   ██║██║   ██║██║     ███████╗
+██║██╔═══╝        ██║   ██║   ██║██║   ██║██║     ╚════██║
+██║██║            ██║   ╚██████╔╝╚██████╔╝███████╗███████║
+╚═╝╚═╝            ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝
+                                                                                                 
+-Made By Rulzarian
+    """)
+
 # Main menu
 def show_menu():
-    print(""" 
-  ____  _____    _______ ____   ____  _       _____ 
- |_   _|  __ \  |__   __/ __ \ / __ \| |     / ____| 
-   | | | |__) |    | | | |  | | |  | | |    | (___  
-   | | |  ___/     | | | |  | | |  | | |     \___ \ 
-  _| |_| |         | | | |__| | |__| | |____ ____) |
- |_____|_|         |_|  \____/ \____/|______|_____/ 
-                                                                                                
-Made By Rulzarian
-
-
-    1) Search Your Current Wi-Fi IP
-    2) Research Another IP Address
-    3) Check If IP Is Blacklisted
-    4) Ping IP To Check Wi-Fi Speed
-    5) Retrieve Whois Information For IP
-    6) Exit
-    """)
+    print("""
+1) Search Your Current Wi-Fi IP
+2) Research Another IP Address
+3) Check If IP Is Blacklisted
+4) Ping IP To Check Wi-Fi Speed
+5) Retrieve Whois Information For IP
+6) Exit
+""")
 
 # Main function
 def main():
+    show_ascii_art()  # Show ASCII art in orange-like color
     while True:
         show_menu()
         choice = input("Choose an option (1/2/3/4/5/6): ").strip()
@@ -204,6 +208,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
